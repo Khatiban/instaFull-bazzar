@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:background="@drawable/dialog">
+
+    <ImageView
+        android:id="@+id/dialog_universal_info_ok"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5dp"
+        android:paddingBottom="10.0dip"
+        android:paddingTop="10.0dip"
+        android:background="@drawable/btn_selector"
+        android:src="@drawable/close_b" />
+
+    <ImageView
+        android:id="@+id/b"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/dialog_universal_info_ok"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/black_app" />
+
+    <ImageView
+        android:id="@+id/image_fury"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:src="@drawable/fury" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/copyright"
+        android:layout_below="@+id/image_fury"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="برنامه نویس و طراح : احسان خطیبان"
+            android:textColor="@color/black_app"
+            android:layout_marginBottom="25dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Email : furystudio1@gmail.com"
+            android:textColor="@color/black_app"
+            android:layout_marginBottom="25dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="instagram : Fury_studio_ir"
+            android:textColor="@color/black_app"
+            android:layout_marginBottom="25dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="FURY Studio"
+            android:layout_marginBottom="25dp"
+            android:textColor="@color/black_app"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="1.2.0"
+            android:textColor="@color/grey_app"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="CopyRight 2017 FURY Studio"
+        android:textColor="@color/grey_app"
+        android:textSize="16sp" />
+
+</RelativeLayout>

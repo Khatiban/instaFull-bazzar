@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:layout_width="160.0dip"
+        android:layout_height="160.0dip"
+        android:layout_marginBottom="30.0dip"
+        android:layout_marginRight="16.0dip"
+        android:layout_marginLeft="16.0dip"
+        android:background="@drawable/widget_background"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:gravity="center"
+        android:clickable="true">
+
+        <RelativeLayout
+            android:id="@+id/btnGetComment"
+            android:layout_width="150.0dip"
+            android:layout_height="150.0dip"
+            android:layout_margin="6.0dip"
+            android:background="@drawable/widget_inner_background"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/txtGetProfileTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20.0dip"
+                android:text="پنچ ستاره"
+                android:textColor="@color/black_app"
+                android:textSize="16.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtGetProfileSubTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtGetProfileTitleText"
+                android:layout_centerHorizontal="true"
+                android:text="اگه همین الان 5 ستاره بدی"
+                android:textColor="@color/black_app"
+                android:gravity="center"
+                android:textSize="12.0sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtGetProfileSubTitleText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtGetProfileSubTitleText"
+                android:layout_centerHorizontal="true"
+                android:text="2000 سکه رایگان میگیری"
+                android:textColor="@color/black_app"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:textSize="12.0sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/image_star"
+                android:layout_below="@+id/txtGetProfileSubTitleText2"
+                android:src="@drawable/star"
+                android:layout_marginTop="10dp"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

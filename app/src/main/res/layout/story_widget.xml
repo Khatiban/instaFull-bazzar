@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:layout_width="110.0dip"
+        android:layout_height="110.0dip"
+        android:layout_marginBottom="30.0dip"
+        android:layout_marginRight="16.0dip"
+        android:layout_marginLeft="16.0dip"
+        android:background="@drawable/widget_background"
+        android:clickable="true">
+
+        <RelativeLayout
+            android:id="@+id/btnGetProfile"
+            android:layout_width="100.0dip"
+            android:layout_height="100.0dip"
+            android:layout_margin="6.0dip"
+            android:background="@drawable/widget_inner_background"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/txtGetProfileTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20.0dip"
+                android:text="پروفایل"
+                android:textColor="@color/black_app"
+                android:textSize="12.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtGetProfileSubTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtGetProfileTitleText"
+                android:layout_centerHorizontal="true"
+                android:text="دانلود کن"
+                android:textColor="@color/black_app"
+                android:textSize="20.0sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgGetProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtGetProfileSubTitleText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8.0dip"
+                android:layout_marginTop="3.0dip"
+                android:src="@drawable/post_widget_icon"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="110.0dip"
+        android:layout_height="110.0dip"
+        android:layout_marginBottom="30.0dip"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginRight="10.0dip"
+        android:background="@drawable/widget_background"
+        android:clickable="true">
+
+        <RelativeLayout
+            android:id="@+id/btnGetStory"
+            android:layout_width="100.0dip"
+            android:layout_height="100.0dip"
+            android:layout_margin="6.0dip"
+            android:background="@drawable/widget_inner_background"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/txtGetStoryTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20.0dip"
+                android:text="استوری"
+                android:textColor="@color/black_app"
+                android:textSize="12.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtGetStorySubTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtGetStoryTitleText"
+                android:layout_centerHorizontal="true"
+                android:text="دانلود کن"
+                android:textColor="@color/black_app"
+                android:textSize="20.0sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgGetStory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtGetStorySubTitleText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8.0dip"
+                android:layout_marginTop="3.0dip"
+                android:src="@drawable/post_widget_icon"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

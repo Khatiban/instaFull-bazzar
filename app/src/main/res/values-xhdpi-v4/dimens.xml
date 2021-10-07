@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="videoview_size">340.0dip</dimen>
+    <dimen name="videoview_height">370.0dip</dimen>
+    <dimen name="videoview_width">630.0dip</dimen>
+    <dimen name="ad_icon_size">58.0dip</dimen>
+    <dimen name="dialog_height_margin">40.0dip</dimen>
+    <dimen name="ad_title_size">18.0dip</dimen>
+    <dimen name="ad_desc_size">12.0dip</dimen>
+    <dimen name="coin_gift">165dp</dimen>
+</resources>

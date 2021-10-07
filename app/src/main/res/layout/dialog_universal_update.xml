@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@color/color_black_transparent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="280.0dip"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10.0dip"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingTop="10.0dip">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/dialog_universal_info_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="10.0dip"
+                    android:gravity="center"
+                    android:text="بروزرسانی"
+                    android:textColor="@color/black_app"
+                    android:textSize="24.0sp" />
+
+                <TextView
+                    android:id="@+id/dialog_universal_info_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:text="نسخه جدید منتشر شد همین الان بگیر"
+                    android:textColor="@color/black_app"
+                    android:textSize="15.0sp" />
+
+
+                <TextView
+                    android:id="@+id/machmoe_gift"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="اگر هم اکنون آپدیت کنی بهت 4000 سکه رایگان تعلق میگیره"
+                    android:textColor="@color/grey_app"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@color/grey_app" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dialog_universal_info_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="10.0dip"
+                android:paddingTop="10.0dip"
+                android:background="@drawable/btn_selector"
+                android:text="لغو"
+                android:textColor="@color/black_app"
+                android:textSize="14.0sp" />
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/grey_app" />
+
+            <TextView
+                android:id="@+id/dialog_universal_info_store"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/btn_selector"
+                android:paddingBottom="10.0dip"
+                android:paddingTop="10.0dip"
+                android:text="آپدیت"
+                android:textColor="@color/black_app"
+                android:textSize="14.0sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="gradient">
+        <attr name="transition_drawable" format="enum"/>
+        <attr name="transition_duration" format="integer"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="BaseCurveProgressView">
+        <attr name="minLineLength" format="float"/>
+        <attr name="maxLineLength" format="float"/>
+        <attr name="lineLength" format="float"/>
+        <attr name="lineLengthChangeable" format="boolean"/>
+        <attr name="lineColor" format="color"/>
+        <attr name="duration" format="integer"/>
+        <attr name="hasHole" format="boolean"/>
+        <attr name="strokeWidth" format="dimension"/>
+        <attr name="sizeMultiplier" format="float"/>
+        <attr name="precision" format="integer"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="MaterialTextField">
+        <attr name="mtf_cardCollapsedHeight" format="dimension"/>
+        <attr name="mtf_labelColor" format="color"/>
+        <attr name="mtf_image" format="reference"/>
+        <attr name="mtf_hasFocus" format="boolean"/>
+        <attr name="mtf_animationDuration" format="integer"/>
+        <attr name="mtf_openKeyboardOnFocus" format="boolean"/>
+        <attr name="mtf_backgroundColor" format="color"/>
+    </declare-styleable>
+
+</resources>

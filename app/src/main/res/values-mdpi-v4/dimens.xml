@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="videoview_size">290.0dip</dimen>
+    <dimen name="videoview_height">320.0dip</dimen>
+    <dimen name="videoview_width">350.0dip</dimen>
+    <dimen name="coin_gift">120dp</dimen>
+</resources>

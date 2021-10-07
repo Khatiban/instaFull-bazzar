@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:customParam="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.fury.instafull.Store">
+
+    <RelativeLayout
+        android:id="@+id/rel_2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/back_page_video"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:background="@drawable/btn_selector"
+            android:src="@drawable/nav_arrow_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="فروشگاه"
+            android:textColor="@color/black_app"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rel_3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/rel_2"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:gravity="right|center_vertical"
+            android:text="موجودی حساب"
+            android:textColor="@color/black_app"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/CoinSingle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:text="0"
+                android:layout_gravity="right"
+                android:textColor="@color/black_app"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:padding="6dp"
+                android:layout_gravity="left"
+                android:src="@drawable/coin" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_3"
+        android:id="@+id/scroll">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_free_coin"
+                android:layout_width="@dimen/coin_gift"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                app:cardBackgroundColor="#e44545"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/coin_gift"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ads_video">
+
+                    <ImageView
+                        android:layout_width="@dimen/coin_gift"
+                        android:layout_height="100dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/error_video" />
+
+                    <TextView
+                        android:id="@+id/text_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:text="تماشا ویدیو تبلیغاتی"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/text_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text_2"
+                        android:gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:text="دو هزار سکه مجانی"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+                <RelativeLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/card_free_coin_insta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/card_free_coin"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/back_store_insta"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/text_22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center"
+                        android:text="1000 سکه"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/text_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text_22"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="برای فالو کردن ما"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/card_coin_1000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/card_free_coin_insta"
+                android:layout_toRightOf="@+id/card_free_coin">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/back_store_color"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_coin_number_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/back_tedad"
+                        android:gravity="center|top"
+                        android:text="20,000 سکه"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/image_coin_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_coin_number_1"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/coin_2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2000"
+                        android:layout_below="@+id/image_coin_1"
+                        android:id="@+id/off_1"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#e44545"
+                        android:background="@drawable/line_text"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_money_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/off_1"
+                        android:background="@drawable/back_money_red"
+                        android:gravity="center|top"
+                        android:text="1000 تومان"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/card_coin_telegram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/card_free_coin"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/back_store_telegram"
+                android:layout_toLeftOf="@+id/card_coin_1000">
+
+
+                <TextView
+                    android:id="@+id/text_222"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:text="1000 سکه"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/text_111"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_222"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="برای عضو شدن در کانال تلگرام"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/card_coin_2000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/card_coin_telegram"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/card_coin_1000">
+
+
+                <RelativeLayout
+                    android:id="@+id/card_money_2000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/back_store_color_2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_coin_number_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/back_tedad"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center|top"
+                        android:text="200,000 سکه"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/image_coin_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_coin_number_2"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/coin_1" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2000"
+                        android:layout_below="@+id/image_coin_2"
+                        android:id="@+id/off_2"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#e44545"
+                        android:background="@drawable/line_text"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/text_money_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/off_2"
+                        android:background="@drawable/back_money_red"
+                        android:gravity="center|top"
+                        android:text="2000 تومان"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/card_money_2000"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/takfif"
+                    android:gravity="center|top"
+                    android:text="80%"
+                    android:id="@+id/darsad_1"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/card_coin_5000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/card_coin_1000"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/card_coin_2000">
+
+
+                <RelativeLayout
+                    android:id="@+id/card_money_5000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/back_store_color_2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_coin_number_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/back_tedad"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center|top"
+                        android:text="500,000 سکه"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/image_coin_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_coin_number_3"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/coin_4" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2000"
+                        android:layout_below="@+id/image_coin_3"
+                        android:id="@+id/off_3"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#e44545"
+                        android:background="@drawable/line_text"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_money_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/off_3"
+                        android:background="@drawable/back_money_red"
+                        android:gravity="center|top"
+                        android:text="5000 تومان"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/card_money_5000"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/takfif"
+                    android:gravity="center|top"
+                    android:text="80%"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/darsad_2"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/card_coin_9000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/card_coin_2000"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/card_coin_1000">
+
+
+                <RelativeLayout
+                    android:id="@+id/card_money_9000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/back_store_color"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_coin_number_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/back_tedad"
+                        android:gravity="center|top"
+                        android:text="2,000,000 سکه"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp" />
+                    <ImageView
+                        android:id="@+id/image_coin_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_coin_number_4"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/coin_5" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2000"
+                        android:layout_below="@+id/image_coin_4"
+                        android:id="@+id/off_4"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#e44545"
+                        android:background="@drawable/line_text"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/text_money_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/off_4"
+                        android:background="@drawable/back_money_red"
+                        android:gravity="center|top"
+                        android:text="9000 تومان"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/card_money_9000"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/takfif"
+                    android:gravity="center|top"
+                    android:text="91%"
+                    android:id="@+id/darsad_3"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/card_coin_16000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/card_coin_5000"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/card_coin_2000">
+
+
+                <RelativeLayout
+                    android:id="@+id/card_money_16000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/back_store_color_2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_coin_number_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center|top"
+                        android:background="@drawable/back_tedad"
+                        android:text="5,000,000 سکه"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/image_coin_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_coin_number_5"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/coin_5" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2000"
+                        android:layout_below="@+id/image_coin_5"
+                        android:id="@+id/off_5"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#e44545"
+                        android:background="@drawable/line_text"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/text_money_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/off_5"
+                        android:background="@drawable/back_money_red"
+                        android:gravity="center|top"
+                        android:text="16000 تومان"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/card_money_16000"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/takfif"
+                    android:gravity="center|top"
+                    android:text="94%"
+                    android:id="@+id/darsad_4"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/card_coin_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_coin_16000"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="10dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/card_money_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/back_store_color_2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_coin_number_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center|top"
+                        android:background="@drawable/back_tedad"
+                        android:text="بی نهایت سکه"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/image_coin_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_coin_number_6"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/coin_8" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2000"
+                        android:layout_below="@+id/image_coin_6"
+                        android:id="@+id/off_6"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#e44545"
+                        android:background="@drawable/line_text"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/text_money_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/off_6"
+                        android:background="@drawable/back_money_red"
+                        android:gravity="center|top"
+                        android:text="30000 تومان"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@+id/rel_3"
+        android:background="@drawable/header_shadow" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@+id/rel_2"
+        android:background="@drawable/header_shadow" />
+
+</RelativeLayout>

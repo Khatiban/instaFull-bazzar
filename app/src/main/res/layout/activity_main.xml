@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/rel_1"
+        android:text="فعال"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:id="@+id/toast_on_or_off"
+        android:visibility="invisible"
+        android:background="@color/color_toast_green"
+        android:enabled="false"
+        android:singleLine="false"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/rel_1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/CoinSingle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:layout_gravity="left"
+                android:text="0"
+                android:textColor="@color/black_app"
+                android:textSize="20sp"
+                android:padding="5dp"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_gravity="right"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/coin" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_glyph"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_selector"
+            android:id="@+id/instagram_FURY"
+            android:padding="11dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/telegram"
+            android:layout_toLeftOf="@id/instagram_FURY"
+            android:layout_centerInParent="true"
+            android:id="@+id/Telegram_FURY"
+            android:background="@drawable/btn_selector"
+            android:padding="11dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rel_1"
+        android:id="@+id/toast_view"/>
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/header_shadow"
+        android:layout_below="@id/rel_1"/>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:background="@drawable/unchecked_follow_checkbox"
+            android:layout_centerInParent="true"
+            android:id="@+id/back_off">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="خاموش"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:textColor="@color/grey_app"
+                android:id="@+id/off_app_insta"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:background="@drawable/unseen"
+            android:layout_centerInParent="true"
+            android:id="@+id/back_on"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="روشن"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:textColor="@color/black_app"
+                android:id="@+id/on_app_insta"/>
+
+        </RelativeLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/open_instagram"
+        android:background="@drawable/instagram"
+        android:layout_above="@+id/clude_2">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/nux_dayone_landing_logo"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/shodw_sport_me_start2"
+        android:layout_above="@+id/clude_2"/>
+
+    <include
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/clude_2"
+        layout="@layout/bottom_org"  />
+</RelativeLayout>

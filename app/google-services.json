@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1081272905379",
+    "firebase_url": "https://instafullgp.firebaseio.com",
+    "project_id": "instafullgp",
+    "storage_bucket": "instafullgp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1081272905379:android:21594b7b94380184",
+        "android_client_info": {
+          "package_name": "com.fury.instafull"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1081272905379-ur8ej13ul6m191hlbfb9u7c4th4eh5qg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fury.instafull",
+            "certificate_hash": "e7ef6ce4bcaf6d8e2faa17aa1840c7409c19f803"
+          }
+        },
+        {
+          "client_id": "1081272905379-k4nqudqjabg0d9fvbnll7uqgp7nh9fui.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDT7xto1DigeVyiPkaGQ59jM-B2Jaj3gpQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1081272905379-k4nqudqjabg0d9fvbnll7uqgp7nh9fui.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

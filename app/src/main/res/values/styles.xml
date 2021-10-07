@@ -1,0 +1,76 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">#bebebe</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="StackedAlertDialogStyle" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+        <item name="buttonBarButtonStyle">@style/StackedButtonBarButtonStyle</item>
+    </style>
+
+    <style name="StackedButtonBarButtonStyle" parent="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:layout_gravity">right</item>
+    </style>
+
+    <style name="CustomDialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@style/customDialogAnim</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+    </style>
+
+    <style name="customDialogAnim" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/logoutDialogAnimation</item>
+    </style>
+
+    <style name="logoutDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="AppThemeToolbar" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/top_bg</item>
+        <item name="colorPrimaryDark">@color/top_bg_dark</item>
+        <item name="colorAccent">@color/top_bg</item>
+    </style>
+
+    <style name="navar" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/black_app</item>
+        <item name="colorPrimaryDark">@color/black_app</item>
+        <item name="colorAccent">@color/black_app</item>
+    </style>
+
+    <style name="swich" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/black_app</item>
+        <item name="colorAccent">@color/black_app</item>
+    </style>
+
+    <style name="page_ViewImage" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">#000000</item>
+    </style>
+
+    <style name="page_start" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:navigationBarColor">#000000</item>
+    </style>
+
+    <style name="suport" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+</resources>

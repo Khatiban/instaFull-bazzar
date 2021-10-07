@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:customParam="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/rl_suport"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    customParam:context=".Suport.Suport_me">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sc_suport">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            app:cardBackgroundColor="@color/black_transparent"
+            app:cardCornerRadius="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="پشتیبانی"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_gravity="center|top"
+                    android:gravity="center"/>
+
+
+                <com.fury.instafull.Suport.MaterialTextField
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    app:mtf_cardCollapsedHeight="2dp"
+                    app:mtf_image="@drawable/suport_phone"
+                    app:mtf_animationDuration="1000"
+                    app:mtf_labelColor="@color/colorPrimary"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    app:mtf_openKeyboardOnFocus="true">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="شماره تماس"
+                        android:textColor="@color/colorPrimary"
+                        android:maxLines="1"
+                        android:inputType="phone"
+                        android:id="@+id/s_phone"
+                        android:textColorHint="#666"
+                        android:textSize="15sp"
+                        android:digits="0123456789" />
+
+                </com.fury.instafull.Suport.MaterialTextField>
+
+
+                <com.fury.instafull.Suport.MaterialTextField
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    app:mtf_cardCollapsedHeight="2dp"
+                    app:mtf_image="@drawable/suport_message"
+                    app:mtf_animationDuration="1000"
+                    app:mtf_labelColor="@color/colorPrimary"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/email_m"
+                    app:mtf_openKeyboardOnFocus="true">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="ایمیل"
+                        android:textColor="@color/colorPrimary"
+                        android:maxLines="1"
+                        android:id="@+id/s_email"
+                        android:inputType="textEmailAddress"
+                        android:textColorHint="#666"
+                        android:textSize="15sp"/>
+
+                </com.fury.instafull.Suport.MaterialTextField>
+
+                <com.fury.instafull.Suport.MaterialTextField
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    app:mtf_cardCollapsedHeight="2dp"
+                    app:mtf_image="@drawable/suport_user"
+                    app:mtf_animationDuration="1000"
+                    app:mtf_labelColor="@color/colorPrimary"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    app:mtf_openKeyboardOnFocus="true">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="نام"
+                        android:textColor="@color/colorPrimary"
+                        android:maxLines="1"
+                        android:id="@+id/s_name"
+                        android:inputType="textPersonName"
+                        android:textColorHint="#666"
+                        android:textSize="15sp" />
+
+                </com.fury.instafull.Suport.MaterialTextField>
+
+                <com.fury.instafull.Suport.MaterialTextField
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    app:mtf_cardCollapsedHeight="2dp"
+                    app:mtf_image="@drawable/suport_speech"
+                    app:mtf_animationDuration="1000"
+                    app:mtf_labelColor="@color/colorPrimary"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp"
+                    app:mtf_openKeyboardOnFocus="true">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="توضیحات"
+                        android:textColor="@color/colorPrimary"
+                        android:maxLines="5"
+                        android:id="@+id/payam"
+                        android:inputType="textShortMessage"
+                        android:textColorHint="#666"
+                        android:textSize="15sp" />
+
+                </com.fury.instafull.Suport.MaterialTextField>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_below="@+id/cv_cardview"
+            android:id="@+id/btn_send"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_selector"
+                android:gravity="center"
+                android:text="ارسال"
+                android:textColor="@color/black_app"
+                />
+
+        </android.support.v7.widget.CardView>
+
+        <com.fury.instafull.Loading.BernoullisProgressView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            customParam:duration="1000"
+            customParam:hasHole="false"
+            customParam:lineColor="@color/text_color_2"
+            customParam:lineLength="0.6"
+            customParam:lineLengthChangeable="true"
+            customParam:maxLineLength="0.8"
+            customParam:minLineLength="0.4"
+            customParam:sizeMultiplier="1"
+            customParam:strokeWidth="5dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"
+            android:layout_below="@+id/cv_cardview"
+            android:id="@+id/progress_support"
+            android:visibility="gone"/>
+
+
+
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

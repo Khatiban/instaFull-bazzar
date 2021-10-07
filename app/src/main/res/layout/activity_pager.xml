@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/text_black"
+    tools:context=".ViewImageActivity">
+
+    <RelativeLayout
+        android:id="@+id/rltop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#85505050"
+        android:minHeight="?actionBarSize">
+
+        <ImageView
+            android:id="@+id/action_close"
+            android:layout_width="60.0dip"
+            android:layout_height="60.0dip"
+            android:background="@drawable/black_btn_selector"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/close"
+            android:padding="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_name"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginRight="70dp"
+            android:singleLine="true"
+            android:layout_marginLeft="70dp"/>
+
+        <ImageView
+            android:id="@+id/action_repost"
+            android:layout_width="60.0dip"
+            android:layout_height="60.0dip"
+            android:background="@drawable/black_btn_selector"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/dock_share_whiteout"
+            android:padding="15dp"/>
+
+    </RelativeLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rltop"
+        android:layout_centerInParent="true"/>
+
+    <RelativeLayout
+        android:id="@+id/rlBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#85505050"
+        android:minHeight="?actionBarSize">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+
+            <FrameLayout
+                android:id="@+id/rlPrevious"
+                android:layout_width="60.0dip"
+                android:layout_height="60.0dip"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/black_btn_selector">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/previous_slide"
+                    android:padding="15dp"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/rlNext"
+                android:layout_width="60.0dip"
+                android:layout_height="60.0dip"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/black_btn_selector">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/next_pic"
+                    android:padding="15dp"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/rlExport"
+            android:layout_width="60.0dip"
+            android:layout_height="60.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/black_btn_selector">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="15dp"
+                android:src="@drawable/share_pager_icon" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/rlDelete2"
+            android:layout_width="60.0dip"
+            android:layout_height="60.0dip"
+            android:layout_centerVertical="true"
+            android:background="@drawable/black_btn_selector">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/delete_img_icon"
+                android:padding="15dp" />
+        </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

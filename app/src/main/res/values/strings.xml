@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Insta Full</string>
+    <string name="title_activity_profile_page">Profile</string>
+    <string name="title_activity_post_view">Post</string>
+    <string name="title_activity_Image">Image</string>
+    <string name="title_activity_Video">Video</string>
+    <string name="title_activity_Support">Support</string>
+    <string name="title_activity_story_view">Story</string>
+    <string name="title_activity_setting">Setting</string>
+    <string name="title_activity_store">Store</string>
+    <string name="title_activity_show">Video Ads</string>
+</resources>
